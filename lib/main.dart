@@ -27,6 +27,7 @@ class HomeScreenState extends State<HomeScreen>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      appBar: AppBar(title: Text('Bottom Navigation Bar',style: TextStyle(color: Colors.white),),centerTitle: true,backgroundColor: Colors.purple,),
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
